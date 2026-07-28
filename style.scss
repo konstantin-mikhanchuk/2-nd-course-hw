@@ -176,4 +176,14 @@ $color-main: #202027;
         vertical-align: middle;
         margin-left: 32px;
     }
+    &__comment-break {
+        display: none;
+    }
+    &__description {
+        display: none; 
+    }
+    &__button {
+        display: none;
+    }
 }
+@import 'mobile';
