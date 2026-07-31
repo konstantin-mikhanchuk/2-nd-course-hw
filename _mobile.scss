@@ -13,29 +13,35 @@
             right 86px top 557px,     
             right 34px top 580px,     
             right 0px top 0px;     
-        height: 649px;             
+        height: 649px;                
         &__title {
+            padding-top: 147px;   
             font-size: 40px;
             width: 262px;
-            text-align: center;
-            margin-left: 57px;
             font-size: 40px;
             line-height: 100%;
             letter-spacing: 0px;
             vertical-align: middle;
+            text-align: center; 
+            margin-left: 0; 
+            box-sizing: content-box; 
+            padding-left: calc(50% - 131px);
+            padding-right: calc(50% - 131px);
         }
         &__subtitle {
             width: 296px;
-            margin-left: 40px;
             font-weight: 400;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0px;
             text-align: center;
-            vertical-align: middle;     
+            vertical-align: middle;
+            margin-left: 0; 
+            box-sizing: content-box; 
+            padding-left: calc(50% - 148px);
+            padding-right: calc(50% - 148px);             
         }
         &__button {
-            margin-left: 40px;
             display: flex;
             width: 285px;
             height: 55px;
@@ -45,6 +51,8 @@
             letter-spacing: 0%;
             text-align: center;
             padding-left: 100px;
+            margin-left: calc(50% - 148px);
+            margin-right: calc(50% - 148px);
         }
     }
     .about {
@@ -54,7 +62,11 @@
             font-size: 0 !important; 
             padding-top: 48.4px;
             margin-bottom: 48px;
-            margin-left: 16px;
+            margin-left: 0px;
+            line-height: 100%;
+            box-sizing: content-box; 
+            padding-left: calc(50% - 172px); 
+            padding-right: calc(50% - 79px); 
             &::after {
                 content: "Мини-игры"; 
                 font-size: 40px; 
@@ -74,9 +86,12 @@
         display: flex;             
         flex-direction: column;    
         align-items: flex-start;   
-        margin-left: 16px;
+        margin-left: 0;
         gap: 24px;
         margin-bottom: 9.9px;
+        box-sizing: content-box; 
+            padding-left: calc(50% - 172px); 
+            padding-right: calc(50% - 79px); 
         &__card {
             display: flex;
             flex-direction: column; 
@@ -156,8 +171,7 @@
                 background-color: #ffffff; 
                 color: #000000;      
                 border-color: #000000;    
-            }
-         
+            } 
         }
     }    
 }
