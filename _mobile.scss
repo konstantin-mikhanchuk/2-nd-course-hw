@@ -1,0 +1,177 @@
+@media (max-width: 767px) {
+    .header {
+        background-image: 
+            url('img/mobstar-left.svg'),    
+            url('img/mobstar-midleft.svg'), 
+            url('img/mobstar-midright.svg'),
+            url('img/mobstar-right.svg'),   
+            url('img/mobstar-big.svg');           
+        background-repeat: no-repeat;
+        background-position: 
+            left 37px top 97px,       
+            left 91px top 64px,       
+            right 86px top 557px,     
+            right 34px top 580px,     
+            right 0px top 0px;     
+        height: 649px;                
+        &__title {
+            padding-top: 147px;   
+            font-size: 40px;
+            width: 262px;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            text-align: center; 
+            margin-left: 0; 
+            box-sizing: content-box; 
+            padding-left: calc(50% - 131px);
+            padding-right: calc(50% - 131px);
+        }
+        &__subtitle {
+            width: 296px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: middle;
+            margin-left: 0; 
+            box-sizing: content-box; 
+            padding-left: calc(50% - 148px);
+            padding-right: calc(50% - 148px);             
+        }
+        &__button {
+            display: flex;
+            width: 285px;
+            height: 55px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            padding-left: 100px;
+            margin-left: calc(50% - 148px);
+            margin-right: calc(50% - 148px);
+        }
+    }
+    .about {
+        background-image: none !important;
+        height: 3740px;
+        &__title {
+            font-size: 0 !important; 
+            padding-top: 48.4px;
+            margin-bottom: 48px;
+            margin-left: 0px;
+            line-height: 100%;
+            box-sizing: content-box; 
+            padding-left: calc(50% - 172px); 
+            padding-right: calc(50% - 79px); 
+            &::after {
+                content: "Мини-игры"; 
+                font-size: 40px; 
+                color: #FFFFFF;
+                font-weight: 700;
+                font-style: Bold;
+                line-height: 100%;
+                letter-spacing: 0px;
+                vertical-align: middle;
+            }
+        }
+        &__subtitle {
+            display: none;
+        }
+    }
+    .games {
+        display: flex;             
+        flex-direction: column;    
+        align-items: flex-start;   
+        margin-left: 0;
+        gap: 24px;
+        margin-bottom: 9.9px;
+        box-sizing: content-box; 
+            padding-left: calc(50% - 172px); 
+            padding-right: calc(50% - 79px); 
+        &__card {
+            display: flex;
+            flex-direction: column; 
+            width: 343px;                
+            background-color: #ffffff; 
+            border-radius: 30px;   
+            text-decoration: none;
+            color: inherit;
+            overflow: hidden; 
+            grid-column: auto !important;
+            grid-row: auto !important;
+            &:nth-child(4) { margin-top: 0 !important; }
+            &:nth-child(6) { margin-top: 0 !important; }
+            &:nth-child(1) { height: 528.6px; }
+            &:nth-child(2) { height: 567.6px; }
+            &:nth-child(3) { height: 567.6px; }
+            &:nth-child(4) { height: 606.6px; }
+            &:nth-child(5) { height: 567.6px; }
+            &:nth-child(6) { height: 626.6px; }
+            &:hover {
+                transform: none !important;
+            }
+        }
+        &__image {
+            width: 100%; 
+            object-fit: cover; 
+            height: 285px; 
+        }
+        &__title {
+            display: none;
+
+        }
+        &__comment-break {
+            display: inline !important;
+        }
+        &__comment {
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            margin-top: 31px;
+            margin-bottom: 17px;
+        }
+        &__description {
+            display: block !important; 
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;        
+            &:nth-child(1) { width: 249.2px; }
+            &:nth-child(2) { width: 233px; }
+            &:nth-child(3) { width: 275px; }
+            &:nth-child(4), &:nth-child(5), &:nth-child(6) { width: 285px; }
+            margin-left: 29px;
+            margin-bottom: 32px;
+        }
+        &__button {
+            box-sizing: border-box; 
+            display: block;
+            background-color: $color-main;
+            width: 285px;
+            height: 55px;
+            opacity: 1;
+            border-radius: 60px;
+            padding: 16px 28px; 
+            border: 1px solid $color-main;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-left: 29px;
+            &:hover {
+                background-color: #ffffff; 
+                color: #000000;      
+                border-color: #000000;    
+            } 
+        }
+    }    
+}
