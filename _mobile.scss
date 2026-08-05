@@ -176,5 +176,11 @@
     } 
     .games-desktop {
         display: none !important;
-    }   
+    } 
+    .footer {
+        height: 100px;
+    }  
+    .footer__text {
+        font-size: 16px;
+    }
 }

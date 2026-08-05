@@ -51,6 +51,9 @@ $color-main: #202027;
         font-weight: 600;
     }
     &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         margin-left: 120px;
         width: 247px;
         height: 66px;
@@ -64,7 +67,6 @@ $color-main: #202027;
         font-style: 'SemiBold';
         line-height: 142%;
         letter-spacing: 0%;
-        text-align: center;
         text-decoration: none;
         gap: 10px;
         &:hover {
@@ -206,7 +208,7 @@ $color-main: #202027;
         right 52px bottom 50px,         
         right 151px bottom 30px;
     &__main-title {
-        padding-top: 98px;
+        padding-top: 48px;
         margin-bottom: 40px;
         color: #FFFFFF;
         font-weight: 700;

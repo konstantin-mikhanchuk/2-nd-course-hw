@@ -44,6 +44,9 @@ body, a, button, input, textarea, select {
   font-weight: 600;
 }
 .header__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 120px;
   width: 247px;
   height: 66px;
@@ -57,7 +60,6 @@ body, a, button, input, textarea, select {
   font-style: "SemiBold";
   line-height: 142%;
   letter-spacing: 0%;
-  text-align: center;
   text-decoration: none;
   gap: 10px;
 }
@@ -200,7 +202,7 @@ body, a, button, input, textarea, select {
   background-position: right 123.8px bottom 3342.8px, right 44.91px bottom 3273.9px, right 52px bottom 50px, right 151px bottom 30px;
 }
 .games-desktop__main-title {
-  padding-top: 98px;
+  padding-top: 48px;
   margin-bottom: 40px;
   color: #FFFFFF;
   font-weight: 700;
@@ -509,5 +511,11 @@ body, a, button, input, textarea, select {
   }
   .games-desktop {
     display: none !important;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__text {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
