@@ -41,8 +41,7 @@
             padding-left: calc(50% - 148px);
             padding-right: calc(50% - 148px);             
         }
-        &__button {
-            display: flex;
+        &__button { 
             width: 285px;
             height: 55px;
             font-weight: 600;
@@ -50,7 +49,6 @@
             line-height: 142%;
             letter-spacing: 0%;
             text-align: center;
-            padding-left: 100px;
             margin-left: calc(50% - 148px);
             margin-right: calc(50% - 148px);
         }

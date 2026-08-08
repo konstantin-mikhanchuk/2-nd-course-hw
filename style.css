@@ -352,7 +352,6 @@ body, a, button, input, textarea, select {
     padding-right: calc(50% - 148px);
   }
   .header__button {
-    display: flex;
     width: 285px;
     height: 55px;
     font-weight: 600;
@@ -360,7 +359,6 @@ body, a, button, input, textarea, select {
     line-height: 142%;
     letter-spacing: 0%;
     text-align: center;
-    padding-left: 100px;
     margin-left: calc(50% - 148px);
     margin-right: calc(50% - 148px);
   }
