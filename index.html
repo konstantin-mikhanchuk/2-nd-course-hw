@@ -63,7 +63,7 @@
                 <p class="games__description">Сыграй в популярную игру против компьютера.</p>
                 <span class="games__button">Играть!</span>
             </a>
-            <a href="#game-card-5" class="games__card games__card_size-large">
+            <a href="#game-card-5" class="games__card games__card_size-large" onclick="if(window.innerWidth <= 767) { startQuiz(); return false; }">
                 <picture>
                     <source srcset="img/game5s.jpg" media="(max-width: 767px)">
                     <img src="img/game5.jpg" alt="Игра 5" class="games__image">
@@ -114,7 +114,6 @@
                 <a href="#" class="games-desktop__button">Играть!</a>
             </div>
             <div class="games-desktop__image-wrapper">
-                
                 <img src="img/game3d.jpg" alt="Игра 3" class="games-desktop__image">
             </div>
         </div>    
@@ -132,7 +131,8 @@
             <div class="games-desktop__content-box">
                 <h3 class="games-desktop__comment">Простая <br>викторина</h3>
                 <p class="games-desktop__description">Отвечай на вопросы викторины с вариантами ответов.</p>
-                <a href="#" class="games-desktop__button">Играть!</a>
+                <a href="#" class="games-desktop__button" onclick="startQuiz(); return false;">Играть!</a>
+                <script src="quiz.js"></script>
             </div>
             <div class="games-desktop__image-wrapper">
                 <img src="img/game5d.jpg" alt="Игра 5" class="games-desktop__image">

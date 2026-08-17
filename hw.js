@@ -1,85 +1,113 @@
-function compar(a, b) {
-   if (a>=b) {
-      return b;
-   } else {
-      return a;
-   }
-}
-console.log(compar (8, 4)); 
-console.log(compar (6, 6)); 
-
-
-function definit(c) {
-   if (c % 2 === 0) {
-      return 'Число четное';
-   } else {
-      return 'Число нечетное';
-   }
-}
-console.log(definit (8)); 
-console.log(definit (3)); 
-
-
-function squar(d) {
-   console.log (d * d);
-}
-squar (11);
-function squarRet(e) {
-   return e * e;
-}
-console.log(squarRet (10));
-
-
-function correctAge (age) {
-   if (age < 0) {
-      return 'Вы ввели неправильное значение';
-   } else if (age > 0 && age <= 12) {
-      return 'Привет, друг!';
-   } else {
-      return 'Добро пожаловать!';
-   }
-}
-alert(correctAge(prompt("Сколько вам лет?")))
-
-
-function number (a, b) {
-   a = Number(a);
-   b = Number(b);
-   if (isNaN(a) || isNaN (b)) {
-      return 'Одно или оба значения не являются числом';
-   } else {
-      return a * b;
-   }
+const numbs = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < numbs.length; i++) {
+    console.log(numbs[i]);
+    if (numbs[i] === 10) break;
 }
 
 
-function cube() {
-   let n = prompt("уважаемый проверяющий, введите число") 
-   n = Number (n);
-   if (isNaN(n)) {
-      return 'Переданный параметр не является числом';
-   } else {
-      return `${n} в кубе равняется ${n ** 3}`   
-   }
-}
-console.log(cube());
+const index = [1, 5, 4, 10, 0, 3];
+let search = index.indexOf(4);
+console.log(search);
 
 
-let circle1 = {
-   radius: 10,
-   getPerimeter() {
-      return 2 * 3.14 * this.radius;
-   },
-   getArea() {
-      return 3.14 * (this.radius ** 2);
-   }
+const sequence = [1, 3, 5, 10, 20];
+let seqApp = sequence.join(' ');
+console.log(seqApp);
+
+
+const arr = [];
+for (let a = 0; a < 3; a++) {
+    const row = [];
+    for (let j = 0; j < 3; j++) {
+        row.push(1);
+    }
+    arr.push(row);
 }
-let circle2 = {
-   radius: 15,
-   getPerimeter() {
-      return 2 * 3.14 * this.radius;
-   },
-   getArea() {
-      return 3.14 * (this.radius ** 2);
-   }
+console.log(arr);
+
+
+const five = [1, 1, 1];
+five.push(2, 2, 2);
+console.log(five);
+
+
+const six = [9, 8, 7, 'a', 6, 5];
+let variation = six.sort();
+let isDelete = variation.filter(el => el !== 'a');
+console.log(isDelete);
+
+
+const seven = [9, 8, 7, 6, 5];
+let guess = Number(prompt("Попробуйте угадать: введите какое-то число."));
+if (seven.includes(guess)) {
+    alert("Угадал")
+} else {
+    alert("Не угадал")
+};
+
+
+const eight = 'abcdef';
+let divided = eight.split('');
+let turnOver = divided.reverse();
+console.log(turnOver.join(''));
+
+
+const nine = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+console.log([...nine[0],...nine[1]]);
+
+
+const ten = [2, 4, 3, 1, 10];
+for (let c = 0; c < ten.length - 1; c++) {
+  let current = ten[c];
+  let second = ten[c + 1];
+  let sum = current + second;
+  console.log(sum);
 }
+
+
+function eleven(arr) {
+    return arr.map(num => num**2)
+};
+let example = [4, 3, 1];
+console.log(eleven(example));
+
+
+function twelve(amm) {
+    return amm.map(d => d.length)
+}
+const words = [
+    "нужно",
+    "для",
+    "проверки"
+]
+console.log(twelve(words));
+
+
+function thirteen(numeric) {
+    return numeric.filter(e => e < 0)
+}
+const negative = [2, 3, -1]
+console.log(thirteen(negative));
+
+
+const fourteen = [];
+for (let f = 0; f < 10; f++) {
+    let g = Math.random() * 10;
+    fourteen.push(g);
+}
+const even = fourteen.filter(num => num % 2 === 0);
+console.log(fourteen);
+console.log(even);
+
+
+const fifteen = [];
+for (let h = 0; h < 6; h++) {
+    let k = Math.random() * 9 + 1;
+    fifteen.push(k);
+}
+let addition = fifteen.reduce((l, m) => l + m, 0) / 6;
+console.log(addition);
+    
