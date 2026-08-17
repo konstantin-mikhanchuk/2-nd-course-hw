@@ -1,113 +1,79 @@
-const numbs = [1, 5, 4, 10, 0, 3];
-for (let i = 0; i < numbs.length; i++) {
-    console.log(numbs[i]);
-    if (numbs[i] === 10) break;
+let first = "js"
+let big = first.toUpperCase();
+console.log(big);
+
+
+function second (a, b) {
+    return a.filter ((product) => {
+        return product.toLowerCase().startsWith(b.toLowerCase());
+    });
 }
+let controle = second(['Хлеб Московский', 'Молоко Алексеевское', 'Коровка на лугу', 
+'Груша Симпозиум'], 'молоко');
+console.log(controle);
 
 
-const index = [1, 5, 4, 10, 0, 3];
-let search = index.indexOf(4);
-console.log(search);
+let third = 32.58884;
+console.log(Math.floor(third));
+console.log(Math.ceil(third));
+console.log(Math.round(third));
 
 
-const sequence = [1, 3, 5, 10, 20];
-let seqApp = sequence.join(' ');
-console.log(seqApp);
+const fourth = [52, 53, 49, 77, 21, 32];
+console.log(Math.min(...fourth));
+console.log(Math.max(...fourth));
 
 
-const arr = [];
-for (let a = 0; a < 3; a++) {
-    const row = [];
-    for (let j = 0; j < 3; j++) {
-        row.push(1);
+function fifth() {
+    const randNum = Math.floor(Math.random() * 10 + 1)
+    console.log(randNum);
+}
+fifth();
+
+
+function sixth(c) {
+    const arr = [];
+    let targetLength = c / 2;
+    for (let i = 0; i < targetLength; i++) {
+        let randNum = Math.floor(Math.random() * (c + 1))
+        arr.push(randNum)
     }
-    arr.push(row);
+    return arr;
 }
-console.log(arr);
+let test = sixth(6);
+console.log(test);
 
 
-const five = [1, 1, 1];
-five.push(2, 2, 2);
-console.log(five);
-
-
-const six = [9, 8, 7, 'a', 6, 5];
-let variation = six.sort();
-let isDelete = variation.filter(el => el !== 'a');
-console.log(isDelete);
-
-
-const seven = [9, 8, 7, 6, 5];
-let guess = Number(prompt("Попробуйте угадать: введите какое-то число."));
-if (seven.includes(guess)) {
-    alert("Угадал")
-} else {
-    alert("Не угадал")
+function seventh (d, e) {
+    if (d > e) {
+        return Math.floor(Math.random() * (d - e + 1) + e);
+    } else {
+        return Math.floor(Math.random() * (e - d + 1) + d);
+    }
 };
 
 
-const eight = 'abcdef';
-let divided = eight.split('');
-let turnOver = divided.reverse();
-console.log(turnOver.join(''));
+let eighth = new Date();
+console.log(eighth);
 
 
-const nine = [
-    [1, 2, 3],
-    [4, 5, 6]
-];
-console.log([...nine[0],...nine[1]]);
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
 
 
-const ten = [2, 4, 3, 1, 10];
-for (let c = 0; c < ten.length - 1; c++) {
-  let current = ten[c];
-  let second = ten[c + 1];
-  let sum = current + second;
-  console.log(sum);
+function tenth(myDate) {
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+    "Пятница", "Суббота"];
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    let fullDate = "Дата: " + myDate.getDate() + 
+    " " + months[myDate.getMonth()] + 
+    " " + myDate.getFullYear() + 
+    " — это " + days[myDate.getDay()] +
+    ". Время: " + myDate.toLocaleTimeString('ru-RU'); 
+    return fullDate;
 }
-
-
-function eleven(arr) {
-    return arr.map(num => num**2)
-};
-let example = [4, 3, 1];
-console.log(eleven(example));
-
-
-function twelve(amm) {
-    return amm.map(d => d.length)
-}
-const words = [
-    "нужно",
-    "для",
-    "проверки"
-]
-console.log(twelve(words));
-
-
-function thirteen(numeric) {
-    return numeric.filter(e => e < 0)
-}
-const negative = [2, 3, -1]
-console.log(thirteen(negative));
-
-
-const fourteen = [];
-for (let f = 0; f < 10; f++) {
-    let g = Math.random() * 10;
-    fourteen.push(g);
-}
-const even = fourteen.filter(num => num % 2 === 0);
-console.log(fourteen);
-console.log(even);
-
-
-const fifteen = [];
-for (let h = 0; h < 6; h++) {
-    let k = Math.random() * 9 + 1;
-    fifteen.push(k);
-}
-let addition = fifteen.reduce((l, m) => l + m, 0) / 6;
-console.log(addition);
+let current = new Date();
+console.log(tenth(current));
     
