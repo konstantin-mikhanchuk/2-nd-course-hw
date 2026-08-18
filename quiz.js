@@ -69,3 +69,26 @@ function overturn() {
    let change = request.split("").reverse().join("");
    alert(change);
 }
+
+
+function stumblingBlock() {
+   let playerChoise = prompt("Введите один из вариантов: камень, ножницы или бумага").toLowerCase();
+   const pcPossibilities = ["камень", "ножницы", "бумага"];
+   function index() {
+      let a = Math.floor(Math.random() * 3);
+      return a
+   }
+   let pcChoise = pcPossibilities[index()];
+   alert("Вы выбрали: " + playerChoise + ". Компьютер выбрал: " + pcChoise)
+   if (pcChoise === playerChoise) {
+      alert("ничья")
+   } else if (pcChoise === "камень" && playerChoise === "ножницы") {
+      alert("поражение")
+   } else if (pcChoise === "ножницы" && playerChoise === "бумага") {
+      alert("поражение")
+   } else if (pcChoise === "бумага" && playerChoise === "камень") {
+      alert("поражение")
+   } else {
+      alert("победа")
+   }
+}
