@@ -31,3 +31,41 @@ function startQuiz() {
    }
    alert(`Количество правильных ответов:` + score)
 }
+
+
+function guess() {
+   let num = Math.floor(Math.random() * 100 + 1); 
+   while (true) {
+      let guess = Number(prompt("угадайте число от 1 до 100, напишите предложенный вариант"));
+      if (guess === num) {
+         alert("Вы преогромнейшая умничка, угадали.");
+         break;
+      } else if (guess > num) { 
+         alert("Вы преогромнейшая умничка, молодец, что стараетесь, но верное число меньше вашего.");
+      } else {
+         alert("Вы ошиблись, но не расстраивайтесь, а продолжайте поиски, верное число больше вашего.");
+      }
+   }
+}
+
+
+function count() {
+   let a = Math.floor(Math.random() * 20 + 1);
+   let b = Math.floor(Math.random() * 20 + 1);
+   let mathematic = [a + b, a - b, Number((a / b).toFixed(2)), a * b];
+   let operations = ["+", "-", "/", "*"];
+   let randomIndex = Math.floor(Math.random() * 4);
+   let version = Number(prompt("решите эту задачу: " + a + " " + operations[randomIndex] + " " + b + ", если результат деления дробное число, то после запятой пишите только первые две цыфры."));
+   if (version === mathematic[randomIndex]) {
+      alert("Вы великий математик, ответ верный.");
+   } else {
+      alert("Вы преогромнейшая умничка, молодец, что стараетесь, но ответ неверный.");
+   }
+}
+
+
+function overturn() {
+   let request = prompt("введите текст");
+   let change = request.split("").reverse().join("");
+   alert(change);
+}
