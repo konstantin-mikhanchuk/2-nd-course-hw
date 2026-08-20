@@ -53,7 +53,7 @@
                 <p class="games__description">Попробуй ввести текст, который будет перевернут.</p>
                 <span class="games__button">Играть!</span>
             </a>
-            <a href="#game-card-4" class="games__card games__card_size-extra-large">
+            <a href="#game-card-4" class="games__card games__card_size-extra-large" onclick="if(window.innerWidth <= 767) { stumblingBlock(); return false; }">
                 <picture>
                     <source srcset="img/game4s.jpg" media="(max-width: 767px)">
                     <img src="img/game4.jpg" alt="Игра 4" class="games__image">
@@ -124,7 +124,7 @@
             <div class="games-desktop__content-box">
                 <h3 class="games-desktop__comment">Камень, <br>ножницы, <br>бумага</h3>
                 <p class="games-desktop__description">Сыграй в популярную игру против компьютера.</p>
-                <a href="#" class="games-desktop__button">Играть!</a>
+                <a href="#" class="games-desktop__button" onclick="stumblingBlock(); return false;">Играть!</a>
             </div>
         </div>
         <div id="game-card-5" class="games-desktop__card">
