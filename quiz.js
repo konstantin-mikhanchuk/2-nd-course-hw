@@ -72,8 +72,17 @@ function overturn() {
 
 
 function stumblingBlock() {
-   let playerChoise = prompt("Введите один из вариантов: камень, ножницы или бумага").toLowerCase();
    const pcPossibilities = ["камень", "ножницы", "бумага"];
+   let playerChoise = prompt("Введите один из вариантов: камень, ножницы или бумага");
+   if (playerChoise === null) {
+      alert("Игра отменена");
+      return; 
+   }
+   playerChoise = playerChoise.toLowerCase().trim();
+   if (!pcPossibilities.includes(playerChoise)) {
+      alert("Ошибка! Вы ввели некорректный вариант.");
+      return;
+   }
    function index() {
       let a = Math.floor(Math.random() * 3);
       return a
