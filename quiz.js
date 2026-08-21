@@ -101,3 +101,25 @@ function stumblingBlock() {
       alert("победа")
    }
 }
+
+
+function colorPlay() {
+   const backColorEl = document.querySelector('.games-desktop');
+   const backColorBtnEl = document.querySelector('.games-desktop__button_special');
+   backColorBtnEl.addEventListener('click', function() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      backColorEl.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+   });
+}
+function mobilColorPlay() {
+   const backColorEl = document.querySelector('.about');
+   const backColorBtnEl = document.querySelector('.games-desktop__button_mobspecial');
+   backColorBtnEl.addEventListener('click', function() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      backColorEl.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+   });
+}
