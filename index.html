@@ -73,7 +73,7 @@
                 <p class="games__description">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
                 <span class="games__button">Играть!</span>
             </a>
-            <a href="#game-card-6" class="games__card games__card_size-extra-large">
+            <a href="#game-card-6" class="games__card games__card_size-extra-large" onclick="if(window.innerWidth <= 767) { mobilColorPlay(); return false; }">
                 <picture>
                     <source srcset="img/game6s.jpg" media="(max-width: 767px)">
                     <img src="img/game6.jpg" alt="Игра 6" class="games__image">
@@ -81,7 +81,7 @@
                 <h3 class="games__title">Игра №6</h3>
                 <p class="games__comment">Генератор случайных цветов</p>
                 <p class="games__description">Игра, в которой при клике<br>на кнопку фон страницы меняется на случайный.</p>
-                <span class="games__button">Играть!</span>
+                <span class="games__button games-desktop__button_mobspecial">Играть!</span>
             </a>
         </div>
     </section>
@@ -144,7 +144,7 @@
             <div class="games-desktop__content-box">
                 <h3 class="games-desktop__comment">Генератор случайных <br>цветов</h3>
                 <p class="games-desktop__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                <a href="#" class="games-desktop__button">Играть!</a>
+                <a href="#" class="games-desktop__button games-desktop__button_special" onclick="colorPlay(); return false;">Играть!</a>
             </div>
         </div>
     </section>
